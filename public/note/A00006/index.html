@@ -16,9 +16,9 @@
 	<script type="text/javascript">
 	window.onload = function(){
 		oClock = document.getElementById('clock');
-		oHour = document.querySelector('.hour');
-		oMinute = document.querySelector('.minute');
-		oSecond = document.querySelector('.second');
+		oHour = oClock.children[2];//document.querySelector('.hour');
+		oMinute = oClock.children[1];//document.querySelector('.minute');
+		oSecond = oClock.children[0];//document.querySelector('.second');
 		var num = 60;
 		for (var i = 0; i < num; i++) {
 			var oSpan = document.createElement('span');
